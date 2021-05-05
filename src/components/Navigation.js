@@ -41,18 +41,15 @@ function Navigation() {
             <Nav.Link href="/food">Food</Nav.Link>
 
             <Nav.Link href="/chat">Chat</Nav.Link>
-            {/* <Nav.Link className="navbar__links" href="/blog">
-              Blog
-            </Nav.Link> */}
-            {/* <Link to="/signup">
-              { <Button
-                href="/signup"
-                style={{ margin: '4px' }}
-                variant="outline-primary"
-              >
-                Sign Up
-              </Button> }
-            </Link> */}
+
+            <Button
+              href="/submit_external"
+              style={{ margin: "4px" }}
+              variant="outline-primary"
+            >
+              Submit a lead
+            </Button>
+
             {/* <Button
               href="/donate"
               style={{ margin: '4px' }}

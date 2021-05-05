@@ -1,3 +1,7 @@
 .button {
   width: 100% !important;
 }
+.col{
+  padding-right: 0;
+  padding-left: 0;
+}

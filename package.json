@@ -17,7 +17,8 @@
     "react-favicon": "^0.0.21",
     "react-router-dom": "^5.2.0",
     "react-scripts": "1.0.17",
-    "react-select": "^4.3.0"
+    "react-select": "^4.3.0",
+    "uuid": "^3.4.0"
   },
   "scripts": {
     "start": "webpack serve --config webpack.dev.js --open",

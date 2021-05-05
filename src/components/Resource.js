@@ -5,10 +5,11 @@ import "./stylesheets/Resource.css";
 import check from "../assets/check.svg";
 function Resource({
   personSubmitter,
+  resourceContact,
+  resourceContact2,
   resourceType,
   resourceName,
   resourceDescription,
-  resourceContact,
   resourceCity,
   resourceState,
   resourceType2,
@@ -40,9 +41,27 @@ function Resource({
             <br />
           </div>
         )}
+        {resourceType2 && (
+          <div>
+            <h1 className="resource__heading">Resource Type Information:</h1>
+            <br />
+            {resourceType2}
+            <br />
+          </div>
+        )}
         <h1 className="resource__heading">Resource Contact</h1>
         <br />
-        Contact at: 0{resourceContact}
+        Tap to call <br />
+        Contact at: <a href={`tel:${resourceContact}`}>0{resourceContact}</a>
+        {resourceContact2 && (
+          <div>
+            <h1 className="resource__heading">Resource Contact</h1>
+            <br />
+            Tap to call <br />
+            Contact at:{" "}
+            <a href={`tel:${resourceContact2}`}>0{resourceContact2}</a>
+          </div>
+        )}
         <br />
         {resourceCity && resourceState ? (
           <div>

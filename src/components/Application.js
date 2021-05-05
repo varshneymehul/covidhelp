@@ -26,6 +26,7 @@ import ProfilePage from "./ProfilePage";
 import "./stylesheets/Application.css";
 import Submit from "./Submit";
 import faviconFile from "../assets/favicon.ico";
+import SubmitExternal from "./SubmitExternal";
 
 function Application() {
   return (
@@ -48,6 +49,7 @@ function Application() {
         <Route path="/signin" component={SignIn} />
         <Route path="/profile" component={ProfilePage} />
         <Route path="/submit" component={Submit} />
+        <Route path="/submit_external" component={SubmitExternal} />
         <Route path="/" component={Home} />
 
         {/*Rendering the home component on default*/}

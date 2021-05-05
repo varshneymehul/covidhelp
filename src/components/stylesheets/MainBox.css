@@ -41,13 +41,13 @@
   object-fit: contain;
   padding-bottom: 5px;
 }
-h1 {
+.box__heading {
   font-family: "Inter";
   font-weight: 400;
   text-align: center;
   font-size: 2rem;
 }
-p {
+.box__content {
   font-family: "Inter";
   font-weight: 200;
   text-align: center;

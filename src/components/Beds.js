@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
+import { v4 as uuidv4 } from "uuid";
 
 import axios from "../axios.js";
 import Resource from "./Resource";
@@ -13,7 +14,11 @@ function Beds() {
   function searchBeds(state, city) {
     setState(state.label);
     setCity(city.value);
-    setIsClicked(true);
+    if (isClicked === true) {
+      setIsClicked(false);
+    } else if (isClicked === false) {
+      setIsClicked(true);
+    }
   }
 
   const fetchData = async () => {
@@ -40,8 +45,9 @@ function Beds() {
             {resources.map((resource) => {
               return (
                 <Resource
+                  key={uuidv4()}
                   resourceType={resource.resourceType}
-                  resourceName={resource.resourcename}
+                  resourceName={resource.resourceName}
                   resourceDescription={resource.resourceDescription}
                   resourceContact={resource.resourceContact}
                   resourceCity={resource.resourceLocation.city}

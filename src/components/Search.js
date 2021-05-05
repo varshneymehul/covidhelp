@@ -9,7 +9,7 @@ import "./stylesheets/Search.css";
 function Search(props) {
   const [state, setState] = useState("");
   const [city, setCity] = useState("");
-
+  
   function handleStateChange(value) {
     setState(value);
     setCity("");
@@ -27,15 +27,25 @@ function Search(props) {
       label: state.name,
     };
   });
-  
+
   if (state) {
     var cities = csc.getCitiesOfState("IN", state.value);
-    var citiesFiltered = cities.map((cities) => {
-      return {
-        value: cities.name,
-        label: cities.name,
-      };
-    });
+
+    if (state.value === "DL") {
+      var citiesFiltered = [
+        {
+          value: "Delhi",
+          label: "Delhi",
+        },
+      ];
+    } else {
+      var citiesFiltered = cities.map((cities) => {
+        return {
+          value: cities.name,
+          label: cities.name,
+        };
+      });
+    }
   }
   return (
     <div>

@@ -17,10 +17,12 @@
   margin: 10px;
   color: white;
   font-weight: 400;
+  min-height: 500px;
 }
 
-.resource__heading{
+.resource__heading {
   font-weight: 900;
+  font-size: 1.5rem;
 }
 .resource__verified {
   display: flex;
@@ -32,4 +34,8 @@
   padding-left: 5px;
   padding-right: 5px;
   object-fit: contain;
+}
+a {
+  text-decoration: none;
+  color: rgb(250, 170, 250);
 }
