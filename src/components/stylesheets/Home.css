@@ -1,0 +1,7 @@
+div.boxes {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 33%;
+  justify-content: space-around;
+  padding: 20px;
+}

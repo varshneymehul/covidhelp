@@ -1,0 +1,25 @@
+.navbar__custom {
+  background-color: #03071e;
+}
+.navbar__name {
+  margin-left: 1rem;
+  color: #ffffff;
+  font-family: "Inter";
+  font-size: 1.2rem;
+}
+.navbar__links {
+  color: #dad3d3 !important;
+}
+.navbar__dropdown > a {
+  color: #dad3d3 !important;
+}
+.navbar__links:hover,
+.navbar__dropdown > a:hover {
+  color: white !important;
+  -webkit-transition: color 500ms linear;
+  -ms-transition: color 500ms linear;
+  transition: color 500ms linear;
+}
+.navbar-collapse {
+  justify-content: flex-end !important;
+}
