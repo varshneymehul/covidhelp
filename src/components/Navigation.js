@@ -25,27 +25,22 @@ function Navigation() {
             <Nav.Link className="navbar__links" href="/" to="/">
               Home
             </Nav.Link>
-            <NavDropdown
-              className="navbar__dropdown"
-              title="Resources"
-              id="collasible-nav-dropdown"
-            >
-              <NavDropdown.Item href="/beds">Beds</NavDropdown.Item>
 
-              <NavDropdown.Item href="/oxygen">Oxygen</NavDropdown.Item>
+            <Nav.Link href="/beds">Beds</Nav.Link>
 
-              <NavDropdown.Item href="/blood">Blood Plasma</NavDropdown.Item>
+            <Nav.Link href="/oxygen">Oxygen</Nav.Link>
 
-              <NavDropdown.Item href="/injection">Remdesivir</NavDropdown.Item>
+            <Nav.Link href="/blood">Blood Plasma</Nav.Link>
 
-              <NavDropdown.Item to="/medicines">Medicine</NavDropdown.Item>
+            <Nav.Link href="/injection">Remdesivir</Nav.Link>
 
-              <NavDropdown.Item href="/ambulance">Ambulance</NavDropdown.Item>
+            <Nav.Link href="/medicines">Medicine</Nav.Link>
 
-              <NavDropdown.Item href="/food">Food</NavDropdown.Item>
+            <Nav.Link href="/ambulance">Ambulance</Nav.Link>
 
-              <NavDropdown.Item href="/chat">Chat</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/food">Food</Nav.Link>
+
+            <Nav.Link href="/chat">Chat</Nav.Link>
             {/* <Nav.Link className="navbar__links" href="/blog">
               Blog
             </Nav.Link> */}

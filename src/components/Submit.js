@@ -98,7 +98,6 @@ function Submit() {
           <form onSubmit={resourceSubmit}>
             <label>Your name:</label>
             <input
-              required
               className="my-1 p-1 w-full"
               onChange={(event) => {
                 onChangeHandler(event);
@@ -111,7 +110,6 @@ function Submit() {
             />
             <label>Resource Name</label>
             <input
-              required
               className="my-1 p-1 w-full"
               onChange={(event) => {
                 onChangeHandler(event);
@@ -124,7 +122,6 @@ function Submit() {
             />
             <label>Resource Description</label>
             <input
-              required
               className="my-1 p-1 w-full"
               onChange={(event) => {
                 onChangeHandler(event);
@@ -154,7 +151,6 @@ function Submit() {
             />
             <label>Resource Contact</label>
             <input
-              required
               className="my-1 p-1 w-full"
               onChange={(event) => {
                 onChangeHandler(event);
@@ -168,7 +164,6 @@ function Submit() {
             />
             <label>Resource Verified last</label>
             <input
-              required
               className="my-1 p-1 w-full"
               onChange={(event) => {
                 onChangeHandler(event);

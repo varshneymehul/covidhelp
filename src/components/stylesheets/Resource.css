@@ -1,13 +1,26 @@
 .resource {
   width: auto;
-  background: rgb(200, 176, 231);
-  border: 2px none ;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    172deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 44%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border: 2px none;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   padding: 20px;
+  margin: 10px;
+  color: white;
+  font-weight: 400;
+}
+
+.resource__heading{
+  font-weight: 900;
 }
 .resource__verified {
   display: flex;
@@ -15,6 +28,8 @@
   justify-content: flex-end;
 }
 .resource__verified img {
-  width: 30px;
+  width: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
   object-fit: contain;
 }

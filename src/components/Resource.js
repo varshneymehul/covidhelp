@@ -21,21 +21,51 @@ function Resource({
           <img src={check} alt="check mark" />
           Verified
         </div>
-        <br />
+        <br /> <br />
         Submitted by: {personSubmitter}
-        <h1 className="heading">{resourceName}</h1>
         <br />
-        <p className="text">{resourceDescription}</p>
+        {resourceName && (
+          <div>
+            <h1 className="resource__heading">Resource Name</h1>
+            <br />
+            {resourceName}
+            <br />
+          </div>
+        )}
+        {resourceDescription && (
+          <div>
+            <h1 className="resource__heading">Resource Description</h1>
+            <br />
+            {resourceDescription}
+            <br />
+          </div>
+        )}
+        <h1 className="resource__heading">Resource Contact</h1>
         <br />
-        <p className="text">Contact at: {resourceContact}</p>
+        Contact at: 0{resourceContact}
         <br />
-        <p className="text">
-          Location: {resourceCity} {resourceState}
-        </p>
+        {resourceCity && resourceState ? (
+          <div>
+            {" "}
+            <h1 className="resource__heading">Resource Location</h1>
+            <br />
+            Location: {resourceCity}, {resourceState}
+            <br />
+          </div>
+        ) : (
+          <div>
+            {" "}
+            <h1 className="resource__heading">Resource Location</h1>
+            <br />
+            Location: All INDIA availability
+            <br />
+          </div>
+        )}
+        <h1 className="resource__heading">Resource Verified:</h1>
         <br />
         Resource verified last at:{resourceVerified}
-        <br/>
         Time in YYYY-MM-DD Format HH:MM
+        <br />
       </div>
     </Col>
   );

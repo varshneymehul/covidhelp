@@ -27,6 +27,7 @@ function Search(props) {
       label: state.name,
     };
   });
+  
   if (state) {
     var cities = csc.getCitiesOfState("IN", state.value);
     var citiesFiltered = cities.map((cities) => {

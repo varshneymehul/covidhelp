@@ -4,8 +4,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   stats: "errors-only",
   entry: {
-    main:"./src/index.js",
-    vendor:"./src/vendor.js"},
+    main: "./src/index.js",
+    vendor: "./src/vendor.js",
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
@@ -19,16 +20,13 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
+
       {
         test: /\.html$/,
         use: ["html-loader"],
       },
       {
-        test: /\.(svg|png|jpg|jpeg|gif)$/,
+        test: /\.(svg|png|jpg|jpeg|gif|ico)$/,
         use: {
           loader: "file-loader",
           options: {
