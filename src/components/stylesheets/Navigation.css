@@ -7,14 +7,9 @@
   font-family: "Inter";
   font-size: 1.2rem;
 }
-.navbar__links {
-  color: #dad3d3 !important;
-}
-.navbar__dropdown > a {
-  color: #dad3d3 !important;
-}
-.navbar__links:hover,
-.navbar__dropdown > a:hover {
+
+
+.navbar__links:hover{
   color: white !important;
   -webkit-transition: color 500ms linear;
   -ms-transition: color 500ms linear;

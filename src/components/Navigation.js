@@ -34,21 +34,37 @@ function Navigation() {
               Useful Links
             </Button>
 
-            <Nav.Link href="/beds">Beds</Nav.Link>
+            <Nav.Link className="navbar__links" href="/beds">
+              Beds
+            </Nav.Link>
 
-            <Nav.Link href="/oxygen">Oxygen</Nav.Link>
+            <Nav.Link className="navbar__links" href="/oxygen">
+              Oxygen
+            </Nav.Link>
 
-            <Nav.Link href="/blood">Blood Plasma</Nav.Link>
+            <Nav.Link className="navbar__links" href="/blood">
+              Blood Plasma
+            </Nav.Link>
 
-            <Nav.Link href="/injection">Remdesivir</Nav.Link>
+            <Nav.Link className="navbar__links" href="/injection">
+              Remdesivir
+            </Nav.Link>
 
-            <Nav.Link href="/medicines">Medicine</Nav.Link>
+            <Nav.Link className="navbar__links" href="/medicines">
+              Medicine
+            </Nav.Link>
 
-            <Nav.Link href="/ambulance">Ambulance</Nav.Link>
+            <Nav.Link className="navbar__links" href="/ambulance">
+              Ambulance
+            </Nav.Link>
 
-            <Nav.Link href="/food">Food</Nav.Link>
+            <Nav.Link className="navbar__links" href="/food">
+              Food
+            </Nav.Link>
 
-            <Nav.Link href="/chat">Chat</Nav.Link>
+            <Nav.Link className="navbar__links" href="/chat">
+              Chat
+            </Nav.Link>
 
             <Button
               href="/submit_external"
