@@ -1,0 +1,8 @@
+.input {
+  outline: 2px;
+  outline-style: solid;
+  outline-color: black;
+  -webkit-box-shadow: 10px 9px 65px -30px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 10px 9px 65px -30px rgba(0, 0, 0, 0.81);
+  box-shadow: 10px 9px 65px -30px rgba(0, 0, 0, 0.81) !important;
+}
