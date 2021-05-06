@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import { Navbar, Button, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Button, Nav } from "react-bootstrap";
 
 import logo from "../assets/logo.png";
 import "./stylesheets/Navigation.css";
@@ -21,10 +21,18 @@ function Navigation() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav>
+          <Nav activeKey={window.location.pathname}>
             <Nav.Link className="navbar__links" href="/" to="/">
               Home
             </Nav.Link>
+
+            <Button
+              href="/useful_links"
+              style={{ margin: "4px" }}
+              variant="outline-warning"
+            >
+              Useful Links
+            </Button>
 
             <Nav.Link href="/beds">Beds</Nav.Link>
 

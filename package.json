@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/runtime": "^7.14.0",
+    "@js-joda/core": "^3.2.0",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "chokidar": "^3.5.1",
@@ -11,6 +12,7 @@
     "country-state-city": "^2.1.0",
     "firebase": "^8.4.3",
     "firebaseui": "^4.8.0",
+    "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
@@ -24,6 +26,7 @@
     "start": "webpack serve --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js",
     "test": "react-scripts test --env=jsdom",
+    "deploy": "firebase deploy",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
@@ -40,6 +43,7 @@
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
+    "popper.js": "^1.16.1",
     "style-loader": "^0.19.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.36.2",

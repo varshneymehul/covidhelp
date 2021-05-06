@@ -63,6 +63,7 @@ function Submit() {
     } else if (value.value === "beds") {
       setOptionResources2([
         { value: "ICU", label: "ICU" },
+        { value: "Oxygen Beds", label: "Oxygen Beds" },
         { value: "Ventilator", label: "Ventilator" },
       ]);
     } else {
@@ -103,7 +104,7 @@ function Submit() {
     });
   }
   function resourceSubmit(event) {
-    console.log(info)
+    console.log(info);
     axios.post("/submit/resource", {
       personSubmitter: info.personSubmitter,
       resourceType: info.resourceType.value, // remdesivir or stuff
@@ -192,7 +193,6 @@ function Submit() {
                 <label>Resource Type 2</label>
 
                 <CreatableSelect
-                  
                   key={uuidv4()}
                   options={optionResources2}
                   className="my-1 p-1 w-full"
@@ -216,7 +216,6 @@ function Submit() {
             )}
             <label>Resource Location</label>
             <Search
-              
               searchData={setLocation}
               className="my-1 p-1 w-full"
               buttonText="Enter location"

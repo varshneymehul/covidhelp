@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
-import {v4 as uuidv4} from "uuid";
+import { v4 as uuidv4 } from "uuid";
 import axios from "../axios.js";
 import Resource from "./Resource";
 import Search from "./Search";

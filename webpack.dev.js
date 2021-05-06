@@ -8,6 +8,7 @@ module.exports = merge(common, {
   devServer: {
     contentBase: "./dist",
     historyApiFallback: true,
+    host: "192.168.1.2", // Your Computer Name
   },
   output: {
     filename: "[name].js",
