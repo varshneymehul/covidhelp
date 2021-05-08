@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { signInWithFacebook, signInWithGoogle } from "../firebase";
 
 function SignUp() {
   // Initialize the FirebaseUI Widget using Firebase.

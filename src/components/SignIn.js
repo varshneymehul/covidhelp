@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { signInWithFacebook, signInWithGoogle } from "../firebase";
 
 function SignIn() {
   const [email, setEmail] = useState("");
