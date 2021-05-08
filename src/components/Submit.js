@@ -58,6 +58,8 @@ function Submit() {
     } else if (value.value === "oxygen") {
       setOptionResources2([
         { value: "Refilling", label: "Refilling" },
+        { value: "Concentrators", label: "Concentrators" },
+        { value: "Kits", label: "Kits" },
         { value: "Empty Can", label: "Empty Can" },
       ]);
     } else if (value.value === "beds") {
@@ -143,6 +145,7 @@ function Submit() {
           <form onSubmit={resourceSubmit}>
             <label>Your name:</label>
             <input
+              autoComplete="on"
               className="my-1 p-1 w-full"
               onChange={(event) => {
                 onChangeHandler(event);

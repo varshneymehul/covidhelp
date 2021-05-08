@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
-import {v4 as uuidv4} from "uuid";
+
+import { v4 as uuidv4 } from "uuid";
 
 import axios from "../axios.js";
 import Resource from "./Resource";
 import Search from "./Search";
 
-function Injection() {
+function ResourcePage() {
   const [resources, setResources] = useState([]);
   const [isClicked, setIsClicked] = useState(false);
   const [state, setState] = useState("");
   const [city, setCity] = useState("");
-  function searchInjection(state, city) {
+  function searchData(state, city) {
     setState(state.label);
     setCity(city.value);
     if (isClicked === true) {
@@ -20,11 +21,12 @@ function Injection() {
       setIsClicked(true);
     }
   }
-
+  
+  const resourceRequestedSmallCase = window.location.pathname;
   const fetchData = async () => {
     console.log("fetchData function begin");
     await axios
-      .get("/injection", { params: { state: state, city: city } })
+      .get(`${resourceRequestedSmallCase}`, { params: { state: state, city: city } })
       .then((res) => {
         console.log("Data fetched");
         console.log(res.data);
@@ -37,8 +39,8 @@ function Injection() {
   }, [isClicked]);
 
   return (
-    <div>
-      <Search searchData={searchInjection} />
+    <div style={{padding:"20px"}}>
+      <Search searchData={searchData} />
       {resources && (
         <Container fluid>
           <Row>
@@ -65,4 +67,4 @@ function Injection() {
   );
 }
 
-export default Injection;
+export default ResourcePage;

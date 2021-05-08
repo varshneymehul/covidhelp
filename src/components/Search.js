@@ -51,7 +51,7 @@ function Search(props) {
     <div>
       <Container fluid>
         <Row className="py-3">
-          <Col>
+          <Col style={{marginRight:"5px"}}>
             <Select
               options={statesFiltered}
               value={state}
@@ -59,7 +59,7 @@ function Search(props) {
             />
           </Col>
           {state && cities && (
-            <Col>
+            <Col style={{marginRight:"5px"}}>
               <Select
                 value={city}
                 onChange={handleCityChange}
@@ -68,7 +68,7 @@ function Search(props) {
             </Col>
           )}
           {state && cities && (
-            <Col>
+            <Col style={{marginRight:"5px"}}>
               <Button
                 disabled={city ? false : true}
                 className="search"

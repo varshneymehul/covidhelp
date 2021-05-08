@@ -11,15 +11,15 @@ import "bootstrap/dist/css/bootstrap.min.css"; // styles need to be imported
 
 // Personal imports
 import Home from "./Home";
-import Ambulance from "./Ambulance";
-import Injection from "./Injection";
-import Blood from "./Blood";
-import Oxygen from "./Oxygen";
-import Beds from "./Beds";
-import Chat from "./Chat";
-import Food from "./Food";
-import Testing from "./Testing";
-import Medicines from "./Medicines";
+// import Ambulance from "./Ambulance";
+// import Injection from "./Injection";
+// import Blood from "./Blood";
+// import Oxygen from "./Oxygen";
+// import Beds from "./Beds";
+// import Chat from "./Chat";
+// import Food from "./Food";
+// import Testing from "./Testing";
+// import Medicines from "./Medicines";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import ProfilePage from "./ProfilePage";
@@ -28,6 +28,7 @@ import Submit from "./Submit";
 import faviconFile from "../assets/favicon.ico";
 import SubmitExternal from "./SubmitExternal";
 import UsefulLinks from "./UsefulLinks";
+import ResourcePage from "./ResourcePage";
 
 function Application() {
   return (
@@ -37,15 +38,15 @@ function Application() {
       <Navigation />
 
       <Switch>
-        <Route path="/injection" component={Injection} />
-        <Route path="/beds" component={Beds} />
-        <Route path="/blood" component={Blood} />
-        <Route path="/medicines" component={Medicines} />
-        <Route path="/oxygen" component={Oxygen} />
-        <Route path="/testing" component={Testing} />
-        <Route path="/ambulance" component={Ambulance} />
-        <Route path="/food" component={Food} />
-        <Route path="/chat" component={Chat} />
+        <Route path="/injection" component={ResourcePage} />
+        <Route path="/beds" component={ResourcePage} />
+        <Route path="/blood" component={ResourcePage} />
+        <Route path="/medicines" component={ResourcePage} />
+        <Route path="/oxygen" component={ResourcePage} />
+        <Route path="/testing" component={ResourcePage} />
+        <Route path="/ambulance" component={ResourcePage} />
+        <Route path="/food" component={ResourcePage} />
+        <Route path="/chat" component={ResourcePage} />
         <Route path="/signup" component={SignUp} />
         <Route path="/signin" component={SignIn} />
         <Route path="/profile" component={ProfilePage} />
