@@ -1,11 +1,6 @@
 import React from "react";
 import Application from "./Application";
-import UserProvider from "../providers/UserProvider";
 function App() {
-  return (
-    <UserProvider>
-      <Application />
-    </UserProvider>
-  );
+  return <Application />;
 }
 export default App;
